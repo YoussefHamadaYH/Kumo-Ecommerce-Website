@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="./f.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <section id="header">
+            <a href="#" class="logo"><img src="./image/logo.png" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="conect.html">Contact</a></li>
+                <li><i class='bx bxs-shopping-bag ' id="cart-icon" ></i></li>
+                <li style="color:chocolate;">
+    <h3>Welcome, <span id="username-display" ></span>!</h3>
+  </li>
+  <li><button id="logout-button" style="background:none; border:none; color:red;font-size: large; cursor:pointer;">Logout</button></li>
+            </ul>
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart </h2>
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="./image/1.jpg" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">Dress</div>
+                            <div class="cart-price">$0</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <!--Remove Cart-->
+                        <i class='bx bxs-trash-alt cart-remove'></i>
+
+                    </div>
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$50</div>
+                </div>
+                <!--Buy-->
+                <button type="button" class="btn-buy" onclick="window.location.href = 'sucess.html';">Buy Now</button>
+                <!--Cart close-->
+                <i class='bx bx-x' id="close-cart" ></i>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Main Home Section -->
+    <section class="main-home" id="main-textup">
+            <div class="main-text" >
+                <h5>Winter Collections</h5>
+                <h1>New Winter <br>Collection 2024</br></h1>
+                <p>Ther`s Nothing Like Trend</p>
+
+                <a href="#" class="main-btn">Shop Now <i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+
+            <div class="down-arrow">
+                <a href="#trending" class="down"><i class='bx bx-down-arrow-alt' ></i></a>
+            </div>
+    </section>
+
+
+    <!-- Section Poducts -->
+    <section class="trending-product" id="trending">
+        <div class="center-text">
+            <h2>Our Trending <span>Products</span></h2>
+        </div>
+        
+       <div class="products owl-carousel owl-theme">
+    <div class="item">
+        <a href="product_details.html"><img src="./image/1.jpg" alt="" class="product-img"></a>
+        <div class="product-text">
+            <h5>Sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bxs-star-half'></i>
+        </div>
+        <div class="price">
+            <h4 class="tit">Half Running Set</h4>
+            <p>$99 - $129</p>
+        </div>
+        <div class="cart-icon">
+                <i class='bx bxs-shopping-bag add-cart' id="cart-icon"></i>
+        </div>
+    </div>
+    <div class="item">
+        <a href="product_details.html"><img src="./image/7.jpg" alt="" class="product-img"></a>
+            <div class="product-text">
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class='bx bx-heart'></i>
+            </div>
+            <div class="ratting">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Printed Straight Kurts</h4>
+                <p>$99 - $129</p>
+            </div>
+            <div class="cart-icon">
+                <i class='bx bxs-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+    </div>
+    <div class="item">
+        <a href="product_details.html"><img src="./image/3.jpg" alt="" class="product-img"></a>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bxs-star-half'></i>
+        </div>
+        <div class="price">
+            <h4>Half Running Suit</h4>
+            <p>$99 - $129</p>
+        </div>
+        <div class="cart-icon">
+                <i class='bx bxs-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+    </div>
+    <div class="item">
+        <a href="product_details.html"><img src="./image/4.jpg" alt="" class="product-img"></a>
+        <div class="product-text">
+            <h5>Hot</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bxs-star-half'></i>
+        </div>
+        <div class="price">
+            <h4>Half Fancy Lady Dress</h4>
+            <p>$99 - $129</p>
+        </div>
+        <div class="cart-icon">
+                <i class='bx bxs-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+    </div>
+    <div class="item">
+        <a href="product_details.html"><img src="./image/5.jpg" alt="" class="product-img"></a>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bxs-star-half'></i>
+        </div>
+        <div class="price">
+            <h4>Flix Flox Jeans</h4>
+            <p>$99 - $129</p>
+        </div>
+        <div class="cart-icon">
+                <i class='bx bxs-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+    </div>
+    <div class="item">
+        <a href="product_details.html"><img src="./image/6.jpg" alt="" class="product-img"></a>
+        <div class="product-text">
+            <h5>Hot</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bxs-star-half'></i>
+        </div>
+        <div class="price">
+            <h4>Fancy Salwar Suites</h4>
+            <p>$99 - $129</p>
+        </div>
+        <div class="cart-icon">
+                <i class='bx bxs-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+    </div>
+    <div class="item">
+        <a href="product_details.html"><img src="./image/7.jpg" alt="" class="product-img"></a>
+        <div class="product-text">
+            <h5>Sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bxs-star-half'></i>
+        </div>
+        <div class="price">
+            <h4>Printed Straight Kurts</h4>
+            <p>$99 - $129</p>
+        </div>
+        <div class="cart-icon">
+                <i class='bx bxs-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+        </div>
+        <div class="item">
+        <a href="product_details.html"><img src="./image/8.jpg" alt="" class="product-img"></a>
+        <div class="product-text">
+            <h5>Sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bxs-star-half'></i>
+        </div>
+        <div class="price">
+            <h4>Collet Full Dress</h4>
+            <p>$99 - $129</p>
+        </div>
+        <div class="cart-icon">
+                <i class='bx bxs-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+        </div>
+    </div>
+   </section>
+
+    <!-- First Banner -->
+    <section id="banner" class="section-m1">
+            <h4>Repaire Servieces</h4>
+            <h2>Up to <span>70% OFF</span> All Collection</h2>
+            <button class="normal">Explore More</button>
+    </section>
+     
+    <!-- Second Banner -->
+    <section id="sm-banner" class="section-p1">
+            <div class="banner-box">
+                <h4>Crezy Deals</h4>
+                <h2>Buy 1 Get 1 Free</h2>
+                <span>The Best Classic dress</span>
+                <button class="white">Learn More</button>
+            </div>
+            <div class="banner-box">
+                <h4>Winter/Summer</h4>
+                <h2>Session</h2>
+                <span>The Best Classic dress</span>
+                <button class="white">Collection</button>
+            </div>
+    </section>
+
+    <!-- Third Banner -->
+    <scection id="banner3">
+            <div class="banner-box">
+                <h4>Season Sale</h4>
+                <h3>Winter Collection -50% OFF</h3>
+            </div>
+            <div class="banner-box">
+                <h4>New Collection</h4>
+                <h3>Winter/Summer 2024</h3>
+            </div>
+            <div class="banner-box">
+                <h4>Dress</h4>
+                <h3>New Collection Dress</h3>
+            </div>
+    </scection>
+
+
+    <!-- Client reviews -->
+    <section class="client-reviews">
+            <div class="reviews">
+                <h3>Clint Reviews</h3>
+            <img src="./image/th.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Pariatur dolore ut, quis eos vel similique harum <br>quaerat optio omnis. Ipsam reiciendis id explicabo asperiores tenetur in repellat hic enim. Mollitia.
+                <h2>Yasmin Islak</h2>
+                <P>CEO</P>
+            </p>
+            </div>
+          
+    </section>
+
+    <!-- Footer -->
+    <section class="contact">
+            <div class="contact-info">
+                <div class="first-info">
+                    <img src="./image/logo.png" alt="">
+                    <p>32 Cairo Streat Egypt</p>
+                    <p>0102658743</p>
+                    <p>kimo123@gmail.com</p>
+                    <div class="socail-icon">
+                        <a href=""><i class='bx bxl-facebook-circle' ></i></a>
+                        <a href=""><i class='bx bxl-twitter' ></i></a>
+                        <a href=""><i class='bx bxl-youtube' ></i></a>
+                        <a href=""><i class='bx bxl-instagram' ></i></a>
+                    </div>
+                </div>
+                <div class="second-info">
+                    <h4>Support</h4>
+                    <p>Contact Us</p>
+                    <p>About Us</p>
+                    <p>Privacy</p>
+                </div>
+                <div class="Third-info">
+                    <h4>Shop</h4>
+                    <p>Women`s Shopping</p>
+                </div>
+                <div class="five-info">
+                    <h4>Subscribe</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deleniti perferendis neque suscipit praesentium. Laborum aliquid ratione nulla. Labore distinctio quisquam quae accusamus numquam sequi nemo alias eum voluptates nisi!</p>
+                    
+                </div>
+            </div>
+            <section>
+                <div class="up-arrow">
+                <a href="#header" class="up"><i class='bx bxs-hand-up' ></i></a>
+            </div>
+            </section>
+            
+    </section>
+    <footer class="footer">
+    <script src="./demo.js"></script>
+</body>
+</html>
